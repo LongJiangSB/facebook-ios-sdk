@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.subspec 'Share' do |ss|
     ss.dependency 'FBSDKCoreKit', "~> #{s.version}"
 
-    ss.exclude_files = 'FBSDKShareKit/FBSDKShareKit/include/**/*'
+    ss.exclude_files = 'FBSDKShareKit/FBSDKShareKit/include/**/*.{h,m}'
     ss.public_header_files = 'FBSDKShareKit/FBSDKShareKit/*.{h}',
                              'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.h'
     ss.source_files = 'FBSDKShareKit/FBSDKShareKit/**/*.{h,m}'
