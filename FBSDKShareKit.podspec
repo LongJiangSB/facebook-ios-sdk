@@ -35,7 +35,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.default_subspecs = 'Share'
-  s.swift_version = '5.0'
 
   s.header_dir = 'FBSDKShareKit'
   s.prefix_header_contents = '#define FBSDKCOCOAPODS'
